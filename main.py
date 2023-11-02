@@ -7,7 +7,7 @@ st.set_page_config(page_title="Bienvenue sur l'application", page_icon=":fr:")
 st.title("Bienvenue sur l'application El maystro")
 
 
-st.write("Cette application vous propose trois modules de prévision :")
+st.write("Cette application vous propose deux modules de prévision :")
 st.write("1. Prévision des demandes")
 st.write("2. Plan de distribution")
 
