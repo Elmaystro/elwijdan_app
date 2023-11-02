@@ -1,1 +1,9 @@
+statsmodels
+matplotlib
+pmdarima
+numpy
+pandas
 ortools
+xlsxwriter
+io
+streamlit_option_menu
