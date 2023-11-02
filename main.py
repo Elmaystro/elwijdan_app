@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set the app title and page icon
-st.set_page_config(page_title="Bienvenue sur l'application", page_icon=":fr:")
+st.set_page_config(page_title="Bienvenue sur l'application")
 
 # Define the welcome message
 st.title("Bienvenue sur l'application El maystro")
