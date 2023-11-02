@@ -24,7 +24,7 @@ if st.button("Télécharger des données de démonstration pour le Plan de distr
     # Add a link to download the dummy data for "Plan de distribution"
 
 # Create a sidebar menu for module selection
-module = st.sidebar.selectbox("Sélectionnez un module :", ["Prévision des demandes", "Plan de production", "Plan de distribution"])
+module = st.sidebar.selectbox("Sélectionnez un module :", ["Prévision des demandes","Plan de distribution"])
 
 # Instructions for each module
 if module == "Prévision des demandes":
