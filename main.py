@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="Bienvenue sur l'application", page_icon=":fr:")
 
 # Define the welcome message
-st.title("Bienvenue sur l'application Streamlit")
+st.title("Bienvenue sur l'application El maystro")
 
 
 st.write("Cette application vous propose trois modules de prévision :")
