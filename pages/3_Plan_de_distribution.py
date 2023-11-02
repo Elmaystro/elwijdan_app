@@ -108,7 +108,7 @@ if batch_file is not None and orders_file is not None:
         model, result_df = optimize_delivery_time(orders_df, batch_df)
         if result_df is not None:
             result_df = result_df[result_df['Quantité'] != 0]
-            st.subheader("Solution de Livraison Optimisée")
+            st.subheader("Plan de Livraison Optimisée")
             # Access the cost values directly from the unit_costs array
             # Calculate the 'La date prévue de mise en rayon' column
             # Create the 'La date prévue de mise en rayon' column by mapping 'n_commande' to 'temps_de_livraison' in 'orders_df'
