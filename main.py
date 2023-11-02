@@ -9,8 +9,7 @@ st.title("Bienvenue sur l'application Streamlit")
 
 st.write("Cette application vous propose trois modules de prévision :")
 st.write("1. Prévision des demandes")
-st.write("2. Plan de production")
-st.write("3. Plan de distribution")
+st.write("2. Plan de distribution")
 
 st.write("Pour télécharger des données de démonstration :")
 
