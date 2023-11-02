@@ -6,3 +6,4 @@ pandas
 ortools
 xlsxwriter
 streamlit_option_menu
+io
