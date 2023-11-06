@@ -36,7 +36,8 @@ if calculate_button and sales_file is not None:
     # Get the best model's order (p, d, q) and seasonal order (P, D, Q, m)
     order = auto_model.get_params()['order']
     seasonal_order = auto_model.get_params()['seasonal_order']
-
+    st.write("seasonal_order", seasonal_order)
+    st.write("order", order)
     # Adjust a SARIMA model to the data
     sarima_model = sm.tsa.SARIMAX(sales['Ventes'], order=order, seasonal_order=seasonal_order)
     sarima_results = sarima_model.fit()
