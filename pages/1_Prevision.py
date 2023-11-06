@@ -30,9 +30,11 @@ if calculate_button and sales_file is not None:
     data['Mois'] = pd.to_datetime(sales['Mois'])
     data.set_index('Mois', inplace=True)
     data['Ventes'] = data['Ventes'].astype(float)  # Ensure the 'Ventes' column has a specific data type
-
-    auto_model = auto_arima(data, seasonal=True, m=s)  # Adjust 'm' for the seasonality of your data
-
+    try:
+        auto_model = auto_arima(data, seasonal=True, m=s)  # Adjust 'm' for the seasonality of your data
+    except Exception as e:
+        st.error(f"An error occurred: {e}")
+        
     # Get the best model's order (p, d, q) and seasonal order (P, D, Q, m)
     order = auto_model.get_params()['order']
     seasonal_order = auto_model.get_params()['seasonal_order']
